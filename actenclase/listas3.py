@@ -3,11 +3,11 @@
 
 import random
 lista=[]
-num=int (input("Escriba el numero "))
+n=int (input("Escriba el numero "))
 numero1=0
 numero2=1
 sol=0   
-for m in range (num):
+for m in range (n):
     sol=numero1+numero2
     lista.append(sol)
     numero1=numero2
