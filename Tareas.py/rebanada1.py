@@ -8,3 +8,5 @@ print(lista)
 num=round(num,2)
 lista2=[num for i in lista]
 print(lista2)
+lista3=[]
+    
