@@ -10,19 +10,31 @@ b=random.randint(200,2500)
 def llenarLista(a,b):
     lista=[random.randrange(a) for c in range (b)]
     return lista
-
 l1=llenarLista(a,b)
-def cuartiles(lista):
-    lista_ordenada = sorted(lista)
-    n = len(lista_ordenada)
-    c1 = lista_ordenada[int(n * 0.25)]
-    c2 = lista_ordenada[int(n * 0.5)]
-    c3 = lista_ordenada[int(n * 0.75)]
+def lista_ordenada(lista):
+    for i in range(len(lista)):
+        for j in range(i+1,len(lista)):
+            if lista[i]>lista[j]:
+               aux=lista[i]
+               lista[i]=lista[j]
+               lista[j]=aux
+    return lista 
 
-    return c1, c2, c3
-
+#def cuartiles(lista):
+#    n = (lista_ordenada)
+    #c1 = lista_ordenada[int(n * 0.25)]
+   # c2 = lista_ordenada[int(n * 0.5)]
+  #  c3 = lista_ordenada[int(n * 0.75)]
+ #   return c1, c2, c3
+#
+def cuartilLista(lista):
+    total=[]
+    for i in range(4):
+        i+=1
+        cuartil=i*((len(lista)+1)/4)
+        total.append(cuartil)
+    return total
 def quintiles(lista):
-    lista_ordenada = sorted(lista)
     n = len(lista_ordenada)
     q1 = lista_ordenada[int(n * 0.2)]
     q2 = lista_ordenada[int(n * 0.4)]
@@ -32,7 +44,7 @@ def quintiles(lista):
     return q1, q2, q3, q4
 
 lista = llenarLista(100, 500)
-l1.sort()
 print("Lista:", l1)
-print("Cuartiles:", cuartiles(l1))
+print("Cuartiles:", cuartilLista(lista))
+print("promedio:", promedio(l1))
 print("Quintiles:", quintiles(l1))
