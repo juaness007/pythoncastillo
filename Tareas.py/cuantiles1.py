@@ -20,31 +20,24 @@ def lista_ordenada(lista):
                lista[j]=aux
     return lista 
 
-#def cuartiles(lista):
-#    n = (lista_ordenada)
-    #c1 = lista_ordenada[int(n * 0.25)]
-   # c2 = lista_ordenada[int(n * 0.5)]
-  #  c3 = lista_ordenada[int(n * 0.75)]
- #   return c1, c2, c3
-#
-def cuartilLista(lista):
+def cuartiles(lista):
     total=[]
     for i in range(4):
         i+=1
         cuartil=i*((len(lista)+1)/4)
         total.append(cuartil)
-    return total
+    return 
 def quintiles(lista):
-    n = len(lista_ordenada)
-    q1 = lista_ordenada[int(n * 0.2)]
-    q2 = lista_ordenada[int(n * 0.4)]
-    q3 = lista_ordenada[int(n * 0.6)]
-    q4 = lista_ordenada[int(n * 0.8)]
+    total=[]
+    for i in range(5):
+        i+=1
+        quintil=i*((len(lista)+1)/5)
+        total.append(quintil)
+    return total
 
-    return q1, q2, q3, q4
 
 lista = llenarLista(100, 500)
 print("Lista:", l1)
-print("Cuartiles:", cuartilLista(lista))
+print("Cuartiles:", cuartiles(lista))
 print("promedio:", promedio(l1))
 print("Quintiles:", quintiles(l1))
