@@ -16,12 +16,30 @@ class Persona:
     def mostrarDatos(self):
         print('los datos de la persona son: ')
         return self.__nombre, self.__documento    
+    
+    listaCursos=[]
+    
+    def añadirCurso(self):
+        curso:[]
+        curso=[input('introduzca cursos: ')]
+        return 
+    
+    def buscarCurso():
+        for curso in listaCursos:
+            print('El nombre del curso es :', curso.nombrecurso)
+        
+        
+        
         
 p=Persona('Ana',123)
-#print(p.getNombre())
+print(p.getNombre())
 q=Persona('Pedro',321)
-#print(q.getNombre())
+print(q.getNombre())
 print(p.getDocumento())
 print(q.getDocumento())
 print(q.mostrarDatos())
+print(p.añadirCurso())
+print(p.buscarCurso())
+
+
         
