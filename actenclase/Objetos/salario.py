@@ -19,4 +19,29 @@ class Empleado:
         return self.__nombre
     
     def getCargo(self):
-        return self.__cargo        
+        return self.__cargo 
+    
+    def getSalario(self):
+        return self.__salario
+
+    def setNom(self,nombre):
+        self.__nombre=nombre  
+
+    def setCargo(self,cargo):
+        self.__cargo=cargo    
+
+    def setSalario(self,salario):
+        self.__salario=salario
+    def horaLab(self):
+        return round(self.__salario/240)
+
+e1=Empleado('Juanes','Ingeniero',1300000)        
+e2=Empleado('Jaimito','Cartero',5500000)
+print(e1.getNombre())
+print(e1.getCargo())
+print(e1.getSalario())
+print(e1.horaLab())
+print(e2.getNombre())
+print(e2.getCargo())
+print(e2.getSalario())
+print(e2.horaLab())

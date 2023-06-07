@@ -19,7 +19,7 @@ class Persona:
         for a in self.__curso:
             if a not in Persona.Cursos:
                 Persona.Cursos.append(a)
-p=Persona('Diego', 1024501189)
+p=Persona('Diego',1024501189)
 print(p.getNombre())
 print(p.getDoc())
 print(p.getCurso())

@@ -25,7 +25,7 @@ class Persona:
         return 
     
     def buscarCurso():
-        for curso in listaCursos:
+        for curso in curso:
             print('El nombre del curso es :', curso.nombrecurso)
         
         
