@@ -20,7 +20,7 @@ class Persona:
     listaCursos=[]
     
     def añadirCurso(self):
-        curso:[]
+        curso=[]
         curso=[input('introduzca cursos: ')]
         return 
     
