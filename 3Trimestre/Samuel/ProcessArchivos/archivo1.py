@@ -11,7 +11,7 @@ def crearArchivos(archivo1):
         try:
                 namefile=input("Introduzca el nombre que le dará al texto:")
                 archivo1=open(f'C:\\clon\pythoncastillo\\3Trimestre\\°Samuel')
-                archivo1.write()
+                archivo1.write(personaldata)
                 archivo1.close()
                 break  
         except FileExistsError:
